@@ -1,0 +1,26 @@
+git status                                      --see what branch you're on
+git branch                                      --see local branches
+git branch -r                                   --see remote branches
+git branch -a                                   --see all branches
+git checkout -b [branch name]                   --create a new branch
+git checkout [branch name]                      --switch to branch in local repo
+git pull                                        --see list of all branches from the remote
+git checkout --track origin/[branch name]       --switch to remote branch
+git push -u origin [branch name]                --if local branch does not exist on remote and you want to push
+        OR
+git push -u origin HEAD                         --HEAD is a reference to the top of the current branch
+git push origin --delete [branch name]          --delete a remote branch
+git branch -d [branch name]                     --delete local branch, only if merged
+        OR
+git branch -D [branch name]                     --delete local branch irrespective of merge status
+git add ./[file name]                           --stages a file to prepare it for commit
+git commit -a                                   --commit a snapshot of all changes in the working directory (tracked files only)
+git commit -m "message"                         --shortcut to immediately add message to commit
+git commit -am "message"                        --combines -a and -m into one command
+git commit -amend                               --adds staged changes to previous commit
+
+
+To merge:
+    1) git status                   --make sure working tree is clean and see what branch you're on
+    2) git checkout master          --checkout the branch that you want to merge the other branch into (replace "master" as needed)
+    3) git merge [branch name]      --merge another branch into the current branch
