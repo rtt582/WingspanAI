@@ -6,7 +6,6 @@ git branch -r                                   --see remote branches
 git branch -a                                   --see all branches
 git checkout -b [branch name]                   --create a new branch
 git checkout [branch name]                      --switch to branch in local repo
-git pull                                        --see list of all branches from the remote
 git checkout --track origin/[branch name]       --switch to remote branch
 git push -u origin [branch name]                --if local branch does not exist on remote and you want to push
         OR
