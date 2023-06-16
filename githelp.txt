@@ -1,3 +1,5 @@
+# This is my first git project, so this .txt file exists purely for my reference as I learn :) ~rtt582
+
 git status                                      --see what branch you're on
 git branch                                      --see local branches
 git branch -r                                   --see remote branches
