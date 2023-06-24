@@ -1,0 +1,16 @@
+# this file exists to explain the data structures in the boardstate.py class
+
+action_cubes        - integer denoting how many action cubes the player has left
+bird_hand           - list of bird strings* held in player's bird hand
+bonus_hand          - list of bonus strings** held in player's bonus hand
+food                - list of food strings*** in player's food pile
+forest              - list of bird strings* played in forest
+grassland           - list of bird strings* played in grassland
+wetland             - list of bird strings* played in wetland
+goal_tiles          - list of bonus strings**
+birdfeeder          - list of food strings*** available in birdfeeder
+bird_tray           - list of bird strings* available in bird tray
+
+*   bird string:    the name of a bird, matched to the name field in the birds.json file
+**  bonus string:   the name of a bonus card, matched to the name of a bonus card in the bonuses.json file
+*** food string:    the name of a food resource, matched to the cost of birds in the birds.json file
