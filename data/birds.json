@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Abbot's Booby",
+        "power_color": "White",
+        "Power_text": "Draw 3 bonus cards, then discard 2. You may discard bonus cards you did not draw this turn.",
+        
+        "__description1__": "is the bird a predator, flocking, or bonus card bird?",
+        "predator": false,
+        "flocking": false,
+        "bonus card": true,
+
+        "nest_type": "Platform",
+        "egg_capacity": 1,
+        "wingspan": 190,
+
+        "__description2__": "which habitats are valid to play this bird in?",
+        "forest": false,
+        "grasslands": false,
+        "wetlands": true,
+
+        "__description3__": "what food does it take to play this bird?",
+        "invertebrate": 0,
+        "seed": 0,
+        "fish": 2,
+        "fruit": 0,
+        "rodent": 0,
+        "nectar": 0,
+        "wild": 0,
+        
+        "__description4__": "is the food cost an either/or?",
+        "/_food_cost": false,
+
+        "__description5__": "is the food cost [something, I don't know what this means from the excel sheet yet]?",
+        "*_food_cost": false,
+
+        "total_food_cost": 2,
+
+        "__description6__": "what bonus cards does this bird count toward?",
+        "anatomist": false,
+        "cartographer": true,
+        "historian": false,
+        "photographer": false,
+        "backyard_birder": false,
+        "bird_bander": false,
+        "bird_counter": false,
+        "bird_feeder": false,
+        "diet_specialist": false,
+        "enclosure_builder": false,
+        "falconer": false,
+        "fishery_manager": true,
+        "food_web_expert": false,
+        "forester": false,
+        "large_bird_specialist": true,
+        "nest_box_builder": false,
+        "omnivore_expert": false,
+        "passerine_specialist": false,
+        "platform_builder": true,
+        "prairie_manager": false,
+        "rodentologist": false,
+        "viticulturist": false,
+        "wetland_scientist": false,
+        "wildlife_gardener": false
+    },
+    {
+        "test": "haha"
+    }
+]

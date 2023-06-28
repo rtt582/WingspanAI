@@ -19,8 +19,10 @@ def main():
         
         # update the boardstate
         #TODO: based on the player's move, update the boardstate accordingly 
-    return 0
+    return
 
 if __name__=="__main__":
-    if main() != 0:
-        print("Error in AI main, program failed.")
+    try:
+        main()
+    except:
+        print("Failed main")
