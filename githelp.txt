@@ -1,4 +1,4 @@
-# This is my first git project, so this .txt file exists purely for my reference as I learn :) ~rtt582
+# This is my first git project, so this .txt file exists purely for my reference
 
 git status                                      --see what branch you're on
 git branch                                      --see local branches

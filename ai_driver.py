@@ -1,9 +1,12 @@
 '''
     The ai_driver main is the top level function used by the Wingspan AI.
-    In it, a boardstate is configured, made modifiable, and worked on by an AI with realtime tunable parameters.
-    The output is the AI's recommended single move of move sequence given the board state.
+    In it, a boardstate is configured, made modifiable, and mutated by an AI with realtime tunable parameters.
+    The output is the AI's recommended single move or move sequence given the initial board state.
 '''
 def main():
+    
+    # program init
+        #TODO: initalize everything to memory; birds, bird functions, etc.
     
     # make a boardstate
         #TODO: create and initialize a BoardState object
