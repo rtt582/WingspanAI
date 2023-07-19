@@ -77,15 +77,17 @@ SCHEMA = {
 
 EXPANSIONS = [] #TODO: populate this list
 
-def bird_init():
+def bird_init() -> list:
+    bird_list = []
     #TODO: add user input requesting used expansions
     with open(".\\data\\birds.json", 'r') as data:
         birds = json.load(data)
         for i, bird in enumerate(birds):
             try:
                 validate(instance=bird, schema=SCHEMA)
-                print("Validated", bird["name"], end="\r")
-                sleep(0.25)
+                bird_list.append(bird)
+                print("Validated", bird["name"], end="\n")
+                #sleep(1)
                 #TODO: skip over template and all non-included expansions
                 #TODO: add bird to list in memory and tie it to its function
             except:
@@ -94,6 +96,7 @@ def bird_init():
                 except:
                     print("Invalid entry in birds.json at index", i, "- no name found - skipping...")
         
-    pass
+    return bird_list
 
-bird_init()
+thingy = bird_init()
+print(thingy[0])
