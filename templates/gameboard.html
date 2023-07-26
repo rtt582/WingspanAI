@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Board State Editor</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Function to fetch the initial data from the backend
+        function fetchInitialData() {
+            $.ajax({
+                url: '/get_board_state', // Replace with your Flask route to retrieve the BoardState data
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // On success, store the data in a variable and update the page
+                    initialData = data;
+                    updatePage();
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        }
+
+        // Function to update the page with the fetched data
+        function updatePage() {
+            // Access the class variables and update the HTML elements here
+            const actionCubesInput = document.getElementById('action_cubes_input');
+            actionCubesInput.value = initialData.action_cubes;
+
+            // ... Update other HTML elements with the fetched data ...
+
+            // You can also use initialData.bird_hand, initialData.bonus_hand, etc. to access other class variables
+
+        }
+
+        // Function to update the Action Cubes value on the server
+        function updateActionCubes() {
+            const actionCubesInput = document.getElementById('action_cubes_input');
+            const actionCubesValue = actionCubesInput.value;
+            
+            $.ajax({
+                url: '/update_action_cubes', // Replace with your Flask route to update the action_cubes variable
+                type: 'POST',
+                data: JSON.stringify({ 'action_cubes': actionCubesValue }),
+                contentType: 'application/json',
+                success: function (response) {
+                    console.log('Action cubes updated successfully');
+                },
+                error: function (error) {
+                    console.log('Error:', error);
+                }
+            });
+        }
+
+        // Similar functions to update other class variables on the server ...
+
+        // Fetch the initial data when the page loads
+        let initialData;
+        $(document).ready(function() {
+            fetchInitialData();
+        });
+    </script>
+</head>
+<body>
+    <?php
+        $variableValue = "Hello, World!";
+        echo "<h1>" . $variableValue . "</h1>";
+    ?>
+
+    <h2>Action Cubes: id="current_value"</h2>
+    <input type="number" id="action_cubes_input" value="">
+    <button onclick="updateActionCubes()">Update</button>
+
+    <!-- Add other HTML elements for the class variables as needed -->
+
+</body>
+</html>

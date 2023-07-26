@@ -5,7 +5,7 @@ class BoardState:
         
     def __init__(self):
         print("2. Initializing BoardState class")
-        self.action_cubes = 8
+        self.action_cubes = 0
         self.bird_hand = []
         self.bonus_hand = []
         self.food = []
