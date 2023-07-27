@@ -86,8 +86,8 @@ def bird_init() -> list:
             try:
                 validate(instance=bird, schema=SCHEMA)
                 bird_list.append(bird)
-                print("Validated", bird["name"], end="\n")
-                #sleep(1)
+                print("Validated", bird["name"], "             ", end="\r") # whitespace added to avoid "leftover" characters
+                sleep(0.5)
                 #TODO: skip over template and all non-included expansions
                 #TODO: add bird to list in memory and tie it to its function
             except:
@@ -97,6 +97,3 @@ def bird_init() -> list:
                     print("Invalid entry in birds.json at index", i, "- no name found - skipping...")
         
     return bird_list
-
-thingy = bird_init()
-print(thingy[0])
