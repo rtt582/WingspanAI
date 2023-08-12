@@ -1,5 +1,30 @@
 {
     "python.analysis.extraPaths": [
         "./classes"
-    ]
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#0c0c0c",
+        "activityBar.activeBorder": "#24dfdf",
+        "activityBar.background": "#044744",
+        "activityBar.foreground": "#24dfdf",
+        "activityBar.inactiveForeground": "#a5b6b5",
+        "activityBarBadge.background": "#080808",
+        "activityBarBadge.foreground": "#0cdfd4",
+        "statusBar.background": "#044744",
+        "statusBar.foreground": "#24dfdf",
+        "statusBarItem.hoverBackground": "#0c0c0c",
+        "titleBar.activeBackground": "#044744",
+        "titleBar.activeForeground": "#24dfdf",
+        "titleBar.inactiveBackground": "#0c0c0c",
+        "titleBar.inactiveForeground": "#24dfdf",
+        "tab.activeBorder": "#24dfdf",
+        "tab.activeBorderTop": "#24dfdf",
+        "editorLineNumber.activeForeground": "#24dfdf",
+        "tab.activeBackground": "#0c0c0c",
+        "tab.activeForeground": "#24dfdf",
+        "sash.hoverBorder": "#044744",
+        "statusBarItem.remoteBackground": "#044744",
+        "statusBarItem.remoteForeground": "#137e78"
+    },
+    "peacock.remoteColor": "#dc143c"
 }

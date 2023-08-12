@@ -15,6 +15,7 @@ class BoardState:
         self.goal_tiles = []
         self.birdfeeder = []
         self.bird_tray = []
+        self.victory_points = 0
 
     def __repr__(self) -> str:
         repr_str = f"{type(self).__name__}(\n"
@@ -28,6 +29,7 @@ class BoardState:
         repr_str += f"    goal_tiles={self.goal_tiles},\n"
         repr_str += f"    birdfeeder={self.birdfeeder},\n"
         repr_str += f"    bird_tray={self.bird_tray}\n"
+        repr_str += f"    victory_points={self.victory_points}\n"
         repr_str += ")"
 
         return repr_str

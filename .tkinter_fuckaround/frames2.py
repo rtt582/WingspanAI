@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import simpledialog
 
 
 def make_frame(root, bg_color="white", width=None, height=None):
@@ -27,6 +28,7 @@ def make_frame(root, bg_color="white", width=None, height=None):
         tk.Label(frame, text="Goal Tiles:").grid(row=7, column=0, sticky='w')
         tk.Label(frame, text="Birdfeeder:").grid(row=8, column=0, sticky='w')
         tk.Label(frame, text="Bird Tray:").grid(row=9, column=0, sticky='w')
+        
         
         # Create a frame inside the "Overview" tab
         tab_frame = ttk.Frame(frame, width=200, height=200)

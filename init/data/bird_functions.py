@@ -1,7 +1,7 @@
 from copy import deepcopy
 import sys
 sys.path.append(".\\classes")
-from init.boardstate import BoardState
+from init.game.boardstate import BoardState
 
 powers = {}
 power = lambda f: powers.setdefault(f.__name__, f)
