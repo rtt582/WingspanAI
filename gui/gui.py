@@ -36,7 +36,7 @@ def init_main_window():
     tab_control.place(relx=0, rely=0)
     
     return root
-        
+ 
 if __name__ == "__main__":
     app = init_main_window()
     app.mainloop()
