@@ -9,7 +9,7 @@ VP = 0
 def init_tab(tab):
     
     # Tab functions ==========================================================================
-    def disable_newlines(event, field):
+    def disable_newlines(event, field=None):
         if event.keysym == 'Return':
             try:
                 return "break"
@@ -31,7 +31,7 @@ def init_tab(tab):
         if bird_name:
             bird_hand_text.config(state="normal")
             content = bird_hand_text.get("1.0", "end")
-            updated_content = content.replace(bird_name + ";", "")  # Remove bird name
+            updated_content = content.replace(bird_name + ";\n", "")  # Remove bird name
             bird_hand_text.delete("1.0", "end")
             bird_hand_text.insert("1.0", updated_content)
             bird_hand_text.config(state="disabled")
